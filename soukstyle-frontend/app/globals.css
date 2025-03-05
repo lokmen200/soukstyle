@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #F5F5F5;
+  color: #1F2937;
+}
+
+@supports (font-variation-settings: normal) {
+  body[lang="ar"] {
+    font-family: 'Amiri', serif;
+    direction: rtl;
+  }
+}
+
+.btn-primary {
+  @apply bg-primary-green text-white px-4 py-2 rounded-lg hover:bg-green-700 transition;
+}
+
+.btn-accent {
+  @apply bg-accent-gold text-gray-800 px-4 py-2 rounded-lg hover:bg-yellow-600 transition;
+}
+
+.card {
+  @apply bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition;
+}
